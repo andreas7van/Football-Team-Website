@@ -1,0 +1,229 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+}
+
+header{
+    background-color: purple;
+    padding: 1em;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    top: 18px; /* Adjust as needed */
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* High z-index to ensure the header is above other content */
+}
+
+
+
+.header-text a.scroll-to-top {
+    color: #000;
+    text-decoration: none;
+    /* ... your existing styles ... */
+    transition: transform 0.3s ease, color 0.5s ease; /* Smooth transition for hover effects */
+}
+
+.header-text a.scroll-to-top:hover {
+    text-decoration: none; /* No underline */
+    color: #fff; /* Change color on hover */
+    background-color: #000; /* Add background color on hover */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Round the corners */
+    transform: scale(1.1); /* Make it slightly larger */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add a shadow for depth */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-right: 20px; /* Adjust as needed */
+    text-decoration: none; /* Optional: removes underline */
+    color: #fff; /* Adjust color as needed */
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+.insta-logo {
+    position: absolute;
+    right: 10px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tiktok-logo {
+    position: absolute;
+    right: 70px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tiktok-logo:hover {
+    transform: scale(1.1);
+ }
+
+.youtube-logo {
+    position: absolute;
+    right: 40px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.youtube-logo:hover {
+    transform: scale(1.1);
+ }
+
+
+.partouzan-logo {
+    order: 1;
+    position: absolute;
+    left: 10px; /* Adjust based on padding */
+    height: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.partouzan-logo:hover{
+    transform: scale(1.1);
+}
+
+
+.insta-logo:hover {
+   transform: scale(1.1);
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+main h1 {
+    color: #ffffff; /* Adjust the color to match your team's theme */
+    margin-bottom: 2em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.matchday-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 8px;
+    margin: 20px 0 40px; /* Increased bottom margin */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    padding: 4em;
+}
+
+
+
+.matchday-info p {
+    font-size: 1.1em; /* Larger font size for readability */
+    line-height: 1.4; /* Spacing between lines */
+    margin-bottom: 0.5em;
+}
+
+.matchday-info p strong {
+    font-size: 1.3em; /* Even larger font size for the match title */
+    color: #ffffff; /* A color that stands out */
+}
+
+.team{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+/* Hover effect for the matchday info box */
+.matchday-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .matchday-info {
+        padding: 20px;
+    }
+}
+
+footer {
+    background-color: #000000;
+}
+
+footer ul {
+    text-align: center;
+    padding: 0;
+    margin: 0; /* Removes default margin */
+}
+
+footer li {
+    padding: 5px 0; /* Adds spacing between list items */
+}
+
+footer a {
+    color: #ffffff; /* Adjust link color to fit your design */
+    text-decoration: none; /* Optional: removes the underline from links */
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adds underline on hover for visual feedback */
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#000000, purple);
+    border-radius: 10px;
+}
+
+
+#preloader{
+    background: #000000 url(preloader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+
+}
+

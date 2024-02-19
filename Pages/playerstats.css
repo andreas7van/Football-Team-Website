@@ -1,0 +1,232 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a font from Google Fonts */
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #4E4E50; /* Dark background for contrast */
+    color: #ffffff; /* Light text for readability */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-right: 20px; /* Adjust as needed */
+    text-decoration: none; /* Optional: removes underline */
+    color: #fff; /* Adjust color as needed */
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+header{
+    background-color: purple;
+    padding: 1em;
+}
+
+
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    top: 18px; /* Adjust as needed */
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* High z-index to ensure the header is above other content */
+}
+
+
+
+.header-text a.scroll-to-top {
+    color: #000;
+    text-decoration: none;
+    /* ... your existing styles ... */
+    transition: transform 0.3s ease, color 0.5s ease; /* Smooth transition for hover effects */
+}
+
+.header-text a.scroll-to-top:hover {
+    text-decoration: none; /* No underline */
+    color: #fff; /* Change color on hover */
+    background-color: #000; /* Add background color on hover */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Round the corners */
+    transform: scale(1.1); /* Make it slightly larger */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add a shadow for depth */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-right: 20px; /* Adjust as needed */
+    text-decoration: none; /* Optional: removes underline */
+    color: #fff; /* Adjust color as needed */
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+.insta-logo {
+    position: absolute;
+    right: 10px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tiktok-logo {
+    position: absolute;
+    right: 70px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tiktok-logo:hover {
+    transform: scale(1.1);
+ }
+
+.youtube-logo {
+    position: absolute;
+    right: 40px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.youtube-logo:hover {
+    transform: scale(1.1);
+ }
+
+
+.partouzan-logo {
+    order: 1;
+    position: absolute;
+    left: 10px; /* Adjust based on padding */
+    height: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.partouzan-logo:hover{
+    transform: scale(1.1);
+}
+
+
+.insta-logo:hover {
+   transform: scale(1.1);
+}
+
+
+
+
+
+/* Main content area */
+main {
+    padding: 20px;
+    text-align: center; /* Center the content */
+}
+
+/* H1 title at the top of the main content */
+main h1 {
+    margin-bottom: 1em; /* Spacing below the h1 */
+    color: #000000; /* Match the header link color for consistency */
+    font-size: 2.5rem; /* Larger font size for the main heading */
+    text-shadow: 2px 2px 4px #000000; /* Text shadow for emphasis */
+}
+
+/* Player stats table styles */
+.player-stats {
+    width: 100%;
+    margin: 1em auto;
+    border-collapse: collapse;
+}
+
+.player-stats th, .player-stats td {
+    padding: 10px;
+    border: 1px solid #ffffff; /* Borders for cells */
+}
+
+.player-stats thead {
+    background-color: purple; /* Dark purple background for header */
+}
+
+.player-stats tbody tr:nth-child(odd) {
+    background-color: #565658; /* Zebra striping for rows */
+}
+
+.player-stats tbody tr:hover {
+    background-color: #000000; /* Highlight on hover */
+    color: #ffffff;
+}
+
+footer {
+    background-color: #000000;
+}
+
+footer ul {
+    text-align: center;
+    padding: 0;
+    margin: 0; /* Removes default margin */
+}
+
+footer li {
+    padding: 5px 0; /* Adds spacing between list items */
+}
+
+footer a {
+    color: #ffffff; /* Adjust link color to fit your design */
+    text-decoration: none; /* Optional: removes the underline from links */
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adds underline on hover for visual feedback */
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#000000, purple);
+    border-radius: 10px;
+}
+
+#preloader{
+    background: #000000 url(../preloader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+
+}

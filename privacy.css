@@ -1,0 +1,227 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+}
+
+
+header, footer {
+    background-color: purple; /* Footer/header background color */
+    color: #fff; /* Footer/header text color */
+    text-align: center; /* Center the text in header/footer */
+}
+
+main {
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 2em auto; /* Centers the main content block with top and bottom margin */
+    padding: 1em; /* Padding inside the main content block */
+    background: #fff; /* Background color for the main content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow around the main content block */
+}
+
+header{
+    background-color: purple;
+    padding: 1em;
+}
+
+
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    top: 18px; /* Adjust as needed */
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* High z-index to ensure the header is above other content */
+}
+
+
+
+.header-text a.scroll-to-top {
+    color: #000;
+    text-decoration: none;
+    /* ... your existing styles ... */
+    transition: transform 0.3s ease, color 0.5s ease; /* Smooth transition for hover effects */
+}
+
+.header-text a.scroll-to-top:hover {
+    text-decoration: none; /* No underline */
+    color: #fff; /* Change color on hover */
+    background-color: #000; /* Add background color on hover */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Round the corners */
+    transform: scale(1.1); /* Make it slightly larger */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add a shadow for depth */
+}
+
+
+
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-right: 20px; /* Adjust as needed */
+    text-decoration: none; /* Optional: removes underline */
+    color: #fff; /* Adjust color as needed */
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+.insta-logo {
+    position: absolute;
+    right: 10px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tiktok-logo {
+    position: absolute;
+    right: 70px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tiktok-logo:hover {
+    transform: scale(1.1);
+ }
+
+.youtube-logo {
+    position: absolute;
+    right: 40px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.youtube-logo:hover {
+    transform: scale(1.1);
+ }
+
+
+.partouzan-logo {
+    position: absolute;
+    left: 10px; /* Adjust based on padding */
+    height: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.partouzan-logo:hover{
+    transform: scale(1.1);
+}
+
+
+.insta-logo:hover {
+   transform: scale(1.1);
+}
+
+
+h1 {
+    text-align: center; /* Center the main title */
+    margin-bottom: 0.5em; /* Spacing below the title */
+}
+
+section {
+    margin-bottom: 2em; /* Spacing between sections */
+}
+
+h2 {
+    background-color: #e7e7e7; /* Light background color for section titles */
+    padding: 0.5em; /* Padding inside the section title */
+    margin: 0; /* Remove default margins from headings */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow below the section title */
+}
+
+p {
+    margin-bottom: 1em; /* Spacing between paragraphs */
+    text-align: center; /* Justify text for clean alignment */
+}
+
+ul {
+    list-style-type: none; /* Remove default list bullet points */
+    padding: 0;
+}
+
+li {
+    padding: 5px 0; /* Spacing between list items */
+}
+
+li a {
+    color: #0066cc; /* Color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+li a:hover {
+    text-decoration: underline; /* Underline links on hover for visual feedback */
+}
+
+
+
+footer {
+    background-color: #000000;
+}
+
+footer ul {
+    text-align: center;
+    padding: 0;
+    margin: 0; /* Removes default margin */
+}
+
+footer li {
+    padding: 5px 0; /* Adds spacing between list items */
+}
+
+footer a {
+    color: #ffffff; /* Adjust link color to fit your design */
+    text-decoration: none; /* Optional: removes the underline from links */
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adds underline on hover for visual feedback */
+}
+
+
+
+::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#000000, purple);
+    border-radius: 10px;
+}
+
+
+#preloader{
+    background: #000000 url(preloader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+
+}
+
+

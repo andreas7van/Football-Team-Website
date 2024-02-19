@@ -1,0 +1,294 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure the body takes full width */
+    max-width: 100%; /* Prevent horizontal overflow */
+    overflow-x: hidden; /* Hide horizontal scrollbar if the content is wider than the viewport */
+    font-family: 'Rubik', sans-serif;
+}
+
+header, footer {
+    background-color: purple; /* Footer/header background color */
+    color: #fff; /* Footer/header text color */
+    text-align: center; /* Center the text in header/footer */
+    left: 4em;
+    right: 4em;
+}
+
+main {
+    display: block;
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Maximum width of the content */
+    padding: 1em; /* Padding inside the main content block */
+    background: #fff; /* Background color for the main content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow around the main content block */
+    background-image:url(team1.jpeg);
+    background-position: center; /* Center the background image */
+    color: #ffffff; /* Adjust text color for readability */
+    padding: 150px; /* Add padding inside the main element */
+    min-height: 110vh; /* Minimum height */
+    
+}
+
+main p {
+    font-size: 2em; /* Increase the size of the heading */
+    color: #ffffff; /* White color for the heading */
+    text-shadow: 2px 2px 4px #000000; /* Text shadow for better readability */
+    color: #ffffff; /* White text for the paragraph */
+    display: block; 
+    padding: 0.5em 1em; /* Padding inside the paragraph box */
+    border-radius: 5px; /* Rounded corners for the paragraph box */
+}
+
+
+main h1, main p, .standings-button {
+    z-index: 2; /* Ensure the text appears above any background overlay */
+    position: relative;
+    margin: 0.5em 0; /* Add space between elements */
+}
+
+main h1 {
+    font-size: 2.5em; /* Increase the size of the heading */
+    color: #ffffff; /* White color for the heading */
+    text-shadow: 2px 2px 4px #000000; /* Text shadow for better readability */
+}
+
+
+
+h1 {
+    text-align: center; /* Center the main title */
+    margin-bottom: 0.5em; /* Spacing below the title */
+}
+
+section {
+    margin-bottom: 2em; /* Spacing between sections */
+}
+
+h2 {
+    background-color: #e7e7e7; /* Light background color for section titles */
+    padding: 0.5em; /* Padding inside the section title */
+    margin: 0; /* Remove default margins from headings */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow below the section title */
+}
+
+p {
+    font-weight: bolder;
+    margin-bottom: 1em; /* Spacing between paragraphs */
+    text-align: center; /* Justify text for clean alignment */
+}
+
+ul {
+    list-style-type: none; /* Remove default list bullet points */
+    padding: 0;
+}
+
+li {
+    padding: 5px 0; /* Spacing between list items */
+}
+
+li a {
+    color: #0066cc; /* Color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+li a:hover {
+    text-decoration: underline; /* Underline links on hover for visual feedback */
+}
+
+section{
+    text-align: center;
+}
+
+.standings-button {
+    display: inline-block;
+    background-color: #090909; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Button padding */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.standings-button:hover {
+    background-color: #222; /* Slightly lighter background on hover */
+    transform: scale(1.1); /* Scale up the button slightly on hover */
+}
+
+
+/******/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+}
+
+header{
+    background-color: purple;
+    padding: 1em;
+}
+
+
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    top: 18px; /* Adjust as needed */
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* High z-index to ensure the header is above other content */
+}
+
+
+
+.header-text a.scroll-to-top {
+    color: #000;
+    text-decoration: none;
+    /* ... your existing styles ... */
+    transition: transform 0.3s ease, color 0.5s ease; /* Smooth transition for hover effects */
+}
+
+.header-text a.scroll-to-top:hover {
+    text-decoration: none; /* No underline */
+    color: #fff; /* Change color on hover */
+    background-color: #000; /* Add background color on hover */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Round the corners */
+    transform: scale(1.1); /* Make it slightly larger */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add a shadow for depth */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-right: 20px; /* Adjust as needed */
+    text-decoration: none; /* Optional: removes underline */
+    color: #fff; /* Adjust color as needed */
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+.insta-logo {
+    position: absolute;
+    right: 10px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tiktok-logo {
+    position: absolute;
+    right: 70px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tiktok-logo:hover {
+    transform: scale(1.1);
+ }
+
+.youtube-logo {
+    position: absolute;
+    right: 40px;
+    top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.youtube-logo:hover {
+    transform: scale(1.1);
+ }
+
+
+.partouzan-logo {
+    order: 1;
+    position: absolute;
+    left: 10px; /* Adjust based on padding */
+    height: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.partouzan-logo:hover{
+    transform: scale(1.1);
+}
+
+
+.insta-logo:hover {
+   transform: scale(1.1);
+}
+
+
+main {
+    height: 70vh; /* Make the main element take up the full viewport height */
+}
+
+
+
+footer {
+    background-color: #000000;
+}
+
+footer ul {
+    text-align: center;
+    padding: 0;
+    margin: 0; /* Removes default margin */
+}
+
+footer li {
+    padding: 5px 0; /* Adds spacing between list items */
+}
+
+footer a {
+    color: #ffffff; /* Adjust link color to fit your design */
+    text-decoration: none; /* Optional: removes the underline from links */
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adds underline on hover for visual feedback */
+}
+
+.p1{
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#000000, purple);
+    border-radius: 10px;
+}
+
+#preloader{
+    background: #000000 url(../preloader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+
+}
