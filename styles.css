@@ -227,3 +227,67 @@ p{
 
 }
 
+
+
+/* Media queries για tablet και μικρότερες οθόνες */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-text {
+        margin: 20px 0;
+    }
+
+    .matchday-info {
+        margin: 20px 0;
+    }
+
+    footer img {
+        width: 100px;
+        height: auto;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Media queries για κινητά */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .matchday-info p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    footer img {
+        width: 80px;
+    }
+}
