@@ -227,3 +227,76 @@ footer a:hover {
 }
 
 
+
+
+
+
+/* Responsive Design: Tablets */
+@media only screen and (max-width: 768px) {
+    header, footer {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-text {
+        top: 10px;
+        font-size: 12px;
+    }
+
+    .insta-logo, .tiktok-logo, .youtube-logo {
+        right: 5px;
+        top: 40px;
+    }
+
+    main {
+        width: 90%;
+        padding: 0.5em;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    .partouzan-logo {
+        height: 40px;
+    }
+}
+
+/* Responsive Design: Mobile */
+@media only screen and (max-width: 480px) {
+    header, footer {
+        padding: 0.5em;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-text {
+        font-size: 10px;
+    }
+
+    main {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .insta-logo, .tiktok-logo, .youtube-logo {
+        right: 5px;
+        top: 5px;
+        height: 20px;
+    }
+
+    .partouzan-logo {
+        height: 30px;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+}
